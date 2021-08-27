@@ -1,2 +1,2 @@
-# Ecomerce_g2
+# Ecommerce_g2
 Projeto Integrador
