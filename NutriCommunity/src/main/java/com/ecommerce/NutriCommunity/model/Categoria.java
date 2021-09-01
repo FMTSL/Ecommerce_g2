@@ -10,18 +10,18 @@ import javax.validation.constraints.Size;
 
 @Entity
 @Table(name = "tb_categoria")
-public class CategoriaModel {
+public class Categoria {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
 	
 	@NotBlank
 	@Size(max = 100)
-	private String nome_ong;
+	private String nomeOng;
 	
 	@NotBlank
 	@Size(max = 100)
-	private String local_atuacao;
+	private String localAtuacao;
 	
 	@NotBlank
 	@Size(max = 20)
@@ -37,20 +37,20 @@ public class CategoriaModel {
 		this.id = id;
 	}
 
-	public String getNome_ong() {
-		return nome_ong;
+	public String getNomeOng() {
+		return nomeOng;
 	}
 
-	public void setNome_ong(String nome_ong) {
-		this.nome_ong = nome_ong;
+	public void setNomeOng(String nomeOng) {
+		this.nomeOng = nomeOng;
 	}
 
-	public String getLocal_atuacao() {
-		return local_atuacao;
+	public String getLocalAtuacao() {
+		return localAtuacao;
 	}
 
-	public void setLocal_atuacao(String local_atuacao) {
-		this.local_atuacao = local_atuacao;
+	public void setLocalAtuacao(String localAtuacao) {
+		this.localAtuacao = localAtuacao;
 	}
 
 	public String getTipo() {
