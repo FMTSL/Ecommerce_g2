@@ -7,7 +7,6 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 @Entity
@@ -29,6 +28,9 @@ public class Usuario {
 	@NotBlank 
 	@Size (min=6)
 	private String senha;
+	
+	private String tipo;
+
 
 	public long getId() {
 		return id;
@@ -62,5 +64,12 @@ public class Usuario {
 		this.senha = senha;
 	}
 	
+	public String getTipo() {
+		return tipo;
+	}
+
+	public void setTipo(String tipo) {
+		this.tipo = tipo;
+	}
 	
 }
