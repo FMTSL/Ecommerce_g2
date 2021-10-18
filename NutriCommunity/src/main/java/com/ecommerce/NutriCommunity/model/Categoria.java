@@ -27,6 +27,9 @@ public class Categoria {
 	private String nomeOng;
 	
 	@NotBlank
+	private String foto;
+	
+	@NotBlank
 	@Size(max = 100)
 	private String localAtuacao;
 	
@@ -52,6 +55,14 @@ public class Categoria {
 
 	public void setNomeOng(String nomeOng) {
 		this.nomeOng = nomeOng;
+	}
+
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
 	}
 
 	public String getLocalAtuacao() {

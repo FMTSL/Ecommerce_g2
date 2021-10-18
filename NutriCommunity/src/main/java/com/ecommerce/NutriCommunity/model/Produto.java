@@ -27,6 +27,9 @@ public class Produto {
 	@Size(max= 30)
 	private String nomeProduto;
 	
+	@NotBlank
+	private String foto;
+	
 	@NotNull
 	private BigDecimal valor;
 	
@@ -54,6 +57,14 @@ public class Produto {
 
 	public void setNomeProduto(String nomeProduto) {
 		this.nomeProduto = nomeProduto;
+	}
+	
+	public String getFoto() {
+		return foto;
+	}
+
+	public void setFoto(String foto) {
+		this.foto = foto;
 	}
 
 	public BigDecimal getValor() {
